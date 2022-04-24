@@ -345,12 +345,16 @@ body {
 }
 
 .tinkoff-info {
-   margin-right: 100px;
+   min-width: 530px;
+   position: relative;
+   z-index: 1;
+   left: 400px;
+   top: 10px;
 }
 .tinkoff .photo-phone{
    position: relative;
-   left: -120px;
-   margin-top: 125px;
+   left: -195px;
+   margin-top: 585px;
    z-index: 1;
 }
 .photo-phone-sh {
@@ -781,4 +785,99 @@ body {
    line-height: 32px;
    margin: 0;
    margin: 0;
+}
+
+//Подвал _ _ _
+.footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 0 150px 0;
+   width: 100%;
+}
+.footer-top {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background: url(/img/footer-bg.png) no-repeat;
+   background-size: 100%;
+   padding: 140px 150px 129px;
+   width: 100%;
+}
+.text {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: column;
+   flex-wrap: nowrap;
+}
+.text h2{
+   font-family: 'Gilroy';
+   font-weight: 800;
+   font-style: normal;
+   font-size: 48px;
+   line-height: 110px;
+   margin: 0 0 40px;
+   color: white;
+}
+.footer-mail{
+   font-family: 'Gilroy';
+   font-weight: 800;
+   font-style: normal;
+   font-size: 30px;
+   line-height: 110px;
+   margin-bottom: 35px;
+   color: white;
+   text-decoration: none;
+}
+.footer-phone{
+   font-family: 'Gilroy';
+   font-weight: 800;
+   font-style: normal;
+   font-size: 48px;
+   line-height: 110px;
+   color: white;
+   text-decoration: none;
+}
+
+//Низ футера _ _ _
+.footer_bottom {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   background-color: rgb(34, 34, 34);
+   padding: 85px 150px;
+   width: 100%;
+}
+
+.footer_bottom .footer_btn{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 77px;
+   height: 77px;
+   border-radius: 50%;
+   background-image: linear-gradient(90deg , rgb(37, 173, 255), rgb(87, 215, 129));
+   margin-right: 20px;
+}
+
+.behance,.dribbble,.vk,.facebook{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 74px;
+   height: 74px;
+   border-radius: 50%;
+   background-color: black;
+}
+
+.footer_bottom div:hover{
+   background-image: linear-gradient(90deg , rgb(37, 173, 255), rgb(87, 215, 129));
+}
+
+.footer_bottom div:nth-child(4){
+   margin-right: 0;
 }
