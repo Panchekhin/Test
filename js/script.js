@@ -1,14 +1,14 @@
 $(document).ready(function () {
-   // $('.header__burger').click(function (event) {
-   //    $('.header__burger,.nav').toggleClass('active');
-   //    $('body').toggleClass('lock')
-   // });
-   $('.slider_bar').slick({
+   $('.burger').click(function (event) {
+      $('.burger,.bar_container,.button_down').toggleClass('active');
+      $('body').toggleClass('lock')
+   });
+   $('.slider_container').slick({
       arrow: true, //показывает стрелки или нет
       prevArrow: null, //отключает левую стрелку
       // nextArrow: null, //отключает праую стрелку
       dots: false, //показывает точки "под" слайдами или нет
-      adaptiveHight: true, //слайды адаптируются по высоте под контент
+      adaptiveHight: false, //слайды адаптируются по высоте под контент
       slidesToShow: 1, //показывает кол-во слайдов на странице
       slidesToScroll: 1, // кол-во прослистываемых слайдов на странице
       speed: 800, //скорость пролистывания слайдов в мл/с
