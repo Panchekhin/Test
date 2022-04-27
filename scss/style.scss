@@ -1,6 +1,5 @@
 @import "_fonts.scss";
 
-
 body {
    margin: 0;
    padding: 0;
@@ -42,7 +41,7 @@ body {
 
 //Логотип __________________________________
 .logo {
-   margin-right: 300px;
+   margin-right: auto;
 }
 
 .logo a {
@@ -288,6 +287,7 @@ body {
    font-size: 14px;
    line-height: 28px;
    text-align: left;
+   margin: 0;
 }
 
 //Кнопка проекты __________________________________
@@ -340,6 +340,8 @@ body {
    position: relative;
    left: -150px;
    margin-top: 70px;
+   z-index: 3;
+   width: 77%;
 }
 
 .gazprom-info {
@@ -386,19 +388,24 @@ body {
    box-sizing: border-box;
 }
 
+.tinkoff .photo-phone {
+   position: relative;
+   left: -125px;
+   margin-top: 585px;
+   z-index: 1;
+   width: 100%;
+}
+
 .tinkoff-info {
    min-width: 530px;
    position: relative;
-   z-index: 1;
-   left: 400px;
+   z-index: 2;
+   left: 420px;
    top: 0;
 }
 
-.tinkoff .photo-phone {
-   position: relative;
-   left: -265px;
-   margin-top: 585px;
-   z-index: 1;
+.tinkoff-menu {
+   margin: 0 0 70px 0;
 }
 
 .tinkoff-info h2 {
@@ -419,23 +426,20 @@ body {
    margin: 0 0 30px 0;
 }
 
-.tinkoff-menu {
-   margin: 0 0 70px 0;
+.tinkoff-menu p:nth-child(4) {
+   margin-bottom: 0;
 }
 
 //Наши проекты (Adidas) __________________________________ 
 .adidas {
-   display: flex;
-   justify-content: space-around;
    align-items: center;
    width: 100%;
-   height: 860px;
 }
 
 .adidas_container {
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: flex-start;
    padding: 0 150px 0;
    width: 100%;
    box-sizing: border-box;
@@ -443,12 +447,17 @@ body {
 
 .adidas .adi-monitor {
    position: relative;
-   left: 370px;
+   left: -150px;
+   width: 100%;
 }
 
 .adidas-info {
    position: relative;
-   left: -580px;
+   left: -680px;
+}
+
+.adidas-menu {
+   margin: 0 0 70px 0;
 }
 
 .adidas h2 {
@@ -470,8 +479,74 @@ body {
    width: 740px;
 }
 
-.adidas-menu {
-   margin: 0 0 70px 0;
+//Кнопки (Газпром) __________________________________
+.btn-in {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 280px;
+   height: 70px;
+   border: 2px solid black;
+   background-color: transparent;
+   text-decoration: none;
+   margin: 0;
+}
+
+.btn-in p {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 20px;
+   color: black;
+   margin: 0 15px 0 0;
+}
+
+//Кнопки (Тинков) __________________________________
+.btn-in-t {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 280px;
+   height: 70px;
+   border: 2px solid black;
+   background-color: transparent;
+   text-decoration: none;
+   margin: 0;
+}
+
+.btn-in-t p {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 20px;
+   color: black;
+   margin: 0 15px 0 0;
+}
+
+//Кнопки (Adidas) __________________________________
+.btn-in-adi {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 280px;
+   height: 70px;
+   border: 2px solid black;
+   background-color: rgb(0, 0, 0);
+   text-decoration: none;
+   margin: 0;
+}
+
+.btn-in-adi p {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 20px;
+   color: black;
+   margin: 0 15px 0 0;
+   color: white;
 }
 
 //Линия всех проектов __________________________________
@@ -513,77 +588,6 @@ body {
    color: rgb(255, 255, 255);
    margin: 0 15px 0 0;
 }
-
-//Кнопки (Газпром) __________________________________
-.btn-in {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 280px;
-   height: 70px;
-   border: 2px solid black;
-   background-color: rgb(189, 203, 215);
-   text-decoration: none;
-   margin: 0;
-}
-
-.btn-in p {
-   font-family: 'Roboto';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 22px;
-   line-height: 20px;
-   color: black;
-   margin: 0 15px 0 0;
-}
-
-//Кнопки (Тинков) __________________________________
-.btn-in-t {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 280px;
-   height: 70px;
-   border: 2px solid black;
-   background-color: rgb(252, 211, 0);
-   text-decoration: none;
-   margin: 0;
-}
-
-.btn-in-t p {
-   font-family: 'Roboto';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 22px;
-   line-height: 20px;
-   color: black;
-   margin: 0 15px 0 0;
-}
-
-//Кнопки (Adidas) __________________________________
-.btn-in-adi {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 280px;
-   height: 70px;
-   border: 2px solid black;
-   background-color: rgb(0, 0, 0);
-   text-decoration: none;
-   margin: 0;
-}
-
-.btn-in-adi p {
-   font-family: 'Roboto';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 22px;
-   line-height: 20px;
-   color: black;
-   margin: 0 15px 0 0;
-   color: white;
-}
-
 //6 Причини _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 .reason {
    background-color: rgb(241, 242, 242);
@@ -759,7 +763,7 @@ body {
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   width: 950px;
+   min-width: 250px;
    text-align: center;
 }
 
@@ -880,7 +884,7 @@ body {
    margin: 0;
 }
 
-//Подвал _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+//Подвал _ _ _
 .footer {
    display: flex;
    justify-content: center;
@@ -993,16 +997,574 @@ body {
 }
 
 
-//@media _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-@media (max-width: 320px) {
+//@media
+//_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+//_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+@media (max-width: 1440px) {
+
+   //header _ _ _
+   .header_container {
+      padding: 20px 100px 24px;
+   }
+
+   //_ _ _
+   .logo {
+      margin-right: auto;
+      padding-right: 40px;
+   }
+
+   .bar_container {
+      margin-right: 50px;
+   }
+
+   //Номер телефлна __________
+   .phone {
+      display: none;
+   }
+   
+   //Текст __________
+   .header_title h1 {
+      margin: 50px 0 0;
+      font-size: 70px;
+      line-height: 80px;
+   }
+
+   .header_title p {
+      font-size: 30px;
+      line-height: 40px;
+      margin: 20px 0 0;
+   }
+
+   //Кнопка с чертой __________
+   .stick {
+      height: 35px;
+   }
+
+   //Что мы делаем _ _ _ _ _
+   //Карточки __________
+   .cards div:not(:last-child) {
+      margin-right: 0;
+   }
+   .cards div:nth-child(2) {
+      margin-bottom: 70px;
+   }
+
+   .cards div:nth-child(4) {
+      margin-bottom: 70px;
+   }
+   
+   //Наши проекты (Газпром) _ _ _ _ _
+   .gazprom {
+      height: auto;
+   }
+
+   .gazprom .sites {
+      position: relative;
+      left: -150px;
+      margin-top: 70px;
+      width: 80%;
+   }
+
+   .gazprom-info h2 {
+      font-size: 38px;
+      line-height: 60px;
+   }
+   
+   .gazprom-info p {
+      font-size: 24px;
+      line-height: 34px;
+      margin: 0 0 50px 0;
+   }
+
+   //Наши проекты (Тиньков) __________
+   .tinkoff {
+      height: 550px  ;
+   }
+
+   .tinkoff .photo-phone {
+      left: -165px;
+      top: -95px;
+      width: 110%;
+   }
+
+   .tinkoff-info {
+      z-index: 2;
+      margin: 0 auto;
+      left: 290px;
+   }
+
+   .tinkoff-menu {
+      margin: 0 0 50px 0;
+   }
+   
+   .tinkoff-info h2 {
+      line-height: 70px;
+      margin: 0 0 30px 0;
+   }
+   
+   .tinkoff-menu p {
+      margin: 0 0 30px 0;
+   }
+
+   //Кнопка (Газпром) __________
+   .btn-in p {
+      margin: 0 15px 0 0;
+   }
+
+   //Кнопки (Тинков) __________
+   .btn-in-t {
+      background-color: transparent;
+   }
+   .btn-in-t p {
+      margin: 0 15px 0 0;
+   }
+
+   //Кнопки (Adidas) __________
+   .btn-in-adi p {
+      margin: 0 15px 0 0;
+   }
+}
+
+
+//_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+//_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+@media (max-width: 1024px) {
+   .header_container {
+      padding: 40px;
+   }
+
+   //_ _ _
+   .logo {
+      margin-right: auto;
+   }
+   .logo a {
+      font-size: 30px;
+   }
+
+   //_ _ _
+   .burger {
+      display: block;
+      position: relative;
+      width: 40px;
+      height: 30px;
+      left: -40px;
+      z-index: 1;
+   }
+
+   .burger span {
+      background-color: white;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      top: 14px;
+      transition: all 0.3s ease 0s;
+   }
+
+   .burger::before,
+   .burger::after {
+      content: '';
+      background-color: white;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+   }
+
+   .burger::before {
+      top: 0;
+   }
+
+   .burger::after {
+      bottom: 0;
+   }
+
+   .burger.burger.active span {
+      transform: scale(0);
+   }
+
+   .burger.active:before {
+      transform: rotate(45deg);
+      top: 14px;
+   }
+
+   .burger.active::after {
+      transform: rotate(-45deg);
+      bottom: 14px;
+   }
+
+   .bar_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(34, 34, 34);
+      opacity: 1;
+      max-height: calc(100vh - 0); // 100% от высоты экрана - высота верхней плашки
+      overflow-y: hidden;
+   }
+
+   .bar_container.active {
+      top: 0;
+      transition: all 0.3s ease 0s;
+   }
+
+   .bar_container ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+   }
+
+   .bar_container li:not(:last-child) {
+      padding: 0;
+      margin-bottom: 40px;
+   }
+
+   .bar_container a {
+      font-size: 35px;
+   }
+
+   //_ _ _
+   .phone {
+      display: none;
+   }
+
+   //_ _ _
+   .header_title h1 {
+      font-size: 35px;
+      line-height: 40px;
+      margin: 50px 0 0;
+   }
+
+   .header_title p {
+      font-size: 25px;
+      line-height: 35px;
+      margin: 20px 0 0;
+   }
+
+   //_ _ _ _ _
+   .button_down.active {
+      display: none;
+   }
+   .button_down p {
+      font-size: 16px;
+      margin: -11px;
+   }
+   
+   .stick {
+      background: rgb(119, 119, 119);
+      width: 2px;
+      height: 35px;
+      margin: auto;
+      margin-top: 15px;
+   }
+
+   //Что мы делаем _ _ _ _ _
+   .cards {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 90px 0 0;
+   }
+   
+   .cards div {
+      text-align: left;
+      width: 460px;
+      margin-bottom: 70px;
+   }
+   
+   .cards div:not(:last-child) {
+      margin-right: 110px;
+   }
+   
+   .cards div:nth-child(3) {
+      margin-right: 0;
+   }
+   
+   .cards div:nth-child(4) {
+      margin: 0 0 70px 0;
+   }
+   
+   .cards div:nth-child(5) {
+      margin-bottom: 0;
+   }
+   
+   .cards img {
+      margin-bottom: 35px;
+   }
+
+   //Наши проекты (Газпром) _ _ _ _ _
+   .gazprom {
+      height: auto;
+   }
+
+   .gazprom_container {
+      align-content: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 0;
+   }
+
+   .gazprom .sites {
+      position: relative;
+      left: 0;
+      min-width: 450px;
+      top: 70px;
+      margin: 0;
+   }
+
+   .gazprom-info {
+      align-items: flex-end;
+      position: relative;
+      left: 300px;
+      top: -60px;
+   }
+
+   .gazprom-info h2 {
+      font-size: 40px;
+      line-height: 50px;
+      margin: 0 0 30px 0;
+   }
+
+   .gazprom-info p {
+      font-size: 19px;
+      line-height: 30px;
+      margin: 0 0 30px 0;
+   }
+
+   //Наши проекты (Тиньков) __________
+   .tinkoff {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 550px;
+   }
+
+   .tinkoff_container {
+      justify-content: center;
+      padding: 30px;
+   }
+
+   .tinkoff .photo-phone {
+      left: -170px;
+      top: 115px;
+      z-index: 2;
+      margin: 0 auto;
+      width: 110%;
+   }
+
+   .tinkoff-info {
+      left: 330px;
+      top: 0;
+      z-index: 3;
+   }
+
+   .tinkoff-info h2 {
+      font-size: 40px;
+      line-height: 50px;
+      margin: 0 0 30px 0;
+   }
+
+   .tinkoff-menu {
+      align-items: flex-start;
+      max-width: 430px;
+       margin: 0 0 30px 0;
+   }
+
+   .tinkoff-menu p {
+      font-size: 19px;
+      line-height: 30px;
+      margin: 0 0 30px 0;
+   }
+
+   //Кнопки (Газпром) __________
+   .btn-in {
+      width: 240px;
+      height: 60px;
+   }
+   //Кнопки (Тинков) __________
+   .btn-in-t {
+      width: 240px;
+      height: 60px;
+   }
+   .btn-in p {
+      margin: 0 15px 0 0;
+   }
+
+   //6 Причини _ _ _
+   .reason_container {
+      align-content: center;
+      padding: 30px;
+   }
+
+   .reason_cards {
+      justify-content: center;
+   }
+
+   .reason_cards div:nth-child(1) {
+      margin: 0 0 80px;
+   }
+   .reason_cards div:nth-child(2) {
+      margin: 0 0 80px;
+   }.reason_cards div:nth-child(3) {
+      margin: 0 0 80px;
+   }
+   .reason_cards div:nth-child(4) {
+      margin: 0 0 80px;
+   }
+   .reason_cards div:nth-child(5) {
+      margin: 0 0 80px;
+   }
+   .reason_cards div:nth-child(6) {
+      margin: 0;
+   }
+
+   //Наши клиенты _ _ _
+   .our_clients {
+      align-content: center;
+   }
+
+   .our_clients-container {
+      flex-wrap: nowrap;
+      padding: 30px 15px;
+      align-content: center;
+   }
+
+   .our_clients h2 {
+      font-size: 45px;
+      line-height: 1;
+      margin: 10px 0 60px;
+   }
+
+   .clients {
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-bottom: 100px;
+   }
+
+   .clients-card {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      margin: 0 0 100px;
+   }
+
+   .clients-card:nth-child(9) {
+      margin: 0 0 100px;
+   }
+
+   .clients-card:nth-child(10) {
+      margin: 0 0 100px;
+   }
+
+   .clients-card:nth-child(11) {
+      margin: 0 0 100px;
+   }
+
+   .clients-card:nth-child(12) {
+      margin: 0;
+   }
+
+   //Слоган __________
+   .slogan {
+      align-content: center;
+      text-align: center;
+   }
+
+   .slogan-top {
+      margin: 60px 0 60px;
+   }
+   
+   .slogan-bottom {
+      margin: 60px 0 0;
+   }
+
+   //Слайдер с видео _ _ _ _ _ 
+
+   .slider {
+      padding: 30px 0;
+   }
+
+   .slider_container {
+      padding: 0;
+   }
+
+   .slider_container .slick-arrow {
+      margin: -60px -160px 0 0;
+   }
+
+   .slick-list {
+      width: 700px;
+   }
+
+   //Подвал _ _ _ _ _
+
+   .footer-top {
+      background-size: 250%;
+      background-position: -318px 0;
+      width: 100%;
+      height: 245px;
+   }
+
+   .top_container {
+      margin: 0;
+      padding: 0;
+   }
+
+   .text h2 {
+      font-size: 26px;
+      line-height: 1;
+      margin-bottom: 40px;
+   }
+
+   .footer-mail {
+      font-size: 25px;
+      line-height: 1;
+      margin-bottom: 40px;
+   }
+
+   .footer-phone {
+      font-size: 25px;
+      line-height: 1;
+   }
+
+   //Низ футера __________
+   .bottom_container {
+      padding: 30px;
+   }
+}
+
+
+//_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+//_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+@media (max-width: 767px) {
    .header_container {
       padding: 15px;
    }
    //_ _ _
    .logo {
       margin-right: 170px;
-   }
+      padding-right: 0;
+      }
+
    .logo a {
       font-size: 25px;
    }
@@ -1127,7 +1689,7 @@ body {
       display: none;
    }
 
-   //Что мы делаем _ _ _
+   //Что мы делаем _ _ _ _ _
    .main {
       text-align: center;
       background: url(/img/bg2.png) no-repeat;
@@ -1141,15 +1703,12 @@ body {
    }
 
    .we_doing h2 {
-      font-family: 'Gilroy';
-      font-weight: 800;
-      font-style: normal;
       font-size: 35px;
       color: black;
       margin: 30px 0 0;
    }
 
-   //Карточки __________________________________ 
+   //Карточки __________ 
    .cards {
       display: flex;
       justify-content: center;
@@ -1160,7 +1719,7 @@ body {
       margin: 42px 0 0;
    }
 
-   .cards div{
+   .cards div {
       text-align: center;
       width: 100%;
       margin-right: 0;
@@ -1190,28 +1749,24 @@ body {
       margin-bottom: 0;
    }
 
-   //Кнопка проекты __________________________________
+   //Кнопка проекты __________
    .button_proj {
       display: none;
    }
 
-   //Наши проекты (Газпром) _ _ _
+   //Наши проекты (Газпром) _ _ _ _ _
    .gazprom {
-      text-align: center;
       background-color: rgb(189, 203, 215);
       width: 100%;
-      height: 540px;
+      height: 650px;
    }
    
    .gazprom_container {
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: flex-start;
       flex-direction: column;
       flex-wrap: nowrap;
-      padding: 30px 15px;
-      width: 100%;
-      box-sizing: border-box;
    }
    
    .gazprom .sites {
@@ -1219,13 +1774,14 @@ body {
       width: 310px;
       left: -15px;
       margin: 0;
+      top: 40px;
    }
    
    .gazprom-info {
-      display: flex;
-      justify-content: space-around;
       align-items: center;
-      flex-direction: column;
+      margin: 0 auto;
+      left: 0;
+      top: auto;
    }
    
    .gazprom-info h2 {
@@ -1240,58 +1796,56 @@ body {
       margin: 0 0 40px 0;
    }
    
-   //Наши проекты (Тиньков) __________________________________
+   //Наши проекты (Тиньков) __________
    .tinkoff {
-      background-color: rgb(252, 211, 0);
-      width: 100%;
-      height: 900px;
+      height: 500px;
    }
    
    .tinkoff_container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      padding: 30px 15px;
-      width: 100%;
-      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
    }
-
+   
    .tinkoff .photo-phone {
-      position: relative;
-      left: -100px;
-      top: -770px;
-      z-index: 1;
-      width: 600px;
+      display: none;
    }
    
    .tinkoff-info {
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-wrap: nowrap;
       text-align: center;
-      position: relative;
+      align-content: center;
+      min-width: 290px;
       left: 0;
-      top: 680px;
-   }
-
-   .tinkoff-info h2 {
-      font-size: 40px;
-      line-height: 1;
-      margin: 0 0 50px 0;
+      margin: 0 auto;
    }
    
    .tinkoff-menu {
-      width: 290px;
-      margin: 0 0 50px 0;
-   }
-   .tinkoff-menu p:nth-child(4){
-      margin: 0;
+      max-width: 300px;
+      padding: 10px;
    }
    
-   //Наши проекты (Adidas) __________________________________ 
+   .tinkoff-info h2 {
+      font-size: 40px;
+      line-height: 50px;
+      margin: 0 0 30px 0;
+   }
+
+   .tinkoff-menu {
+      align-items: flex-start;
+      max-width: 430px;
+       margin: 0 0 30px 0;
+   }
+
+   .tinkoff-menu p {
+      font-size: 19px;
+      line-height: 30px;
+      margin: 0 0 30px 0;
+   }
+   //Наши проекты (Adidas) __________
    .adidas {
       width: 100%;
       height: 835px;
@@ -1299,10 +1853,10 @@ body {
    
    .adidas_container {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
       flex-direction: column;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       padding: 30px 15px;
       width: 100%;
       box-sizing: border-box;
@@ -1324,8 +1878,8 @@ body {
       justify-content: center;
       text-align: center;
       position: relative;
-      left: -254px;
-      top: -20px;
+      left: 0;
+      margin: 0 auto;
    }
    
    .adidas h2 {
@@ -1345,8 +1899,31 @@ body {
    .adidas-menu p:nth-child(2) {
       margin: 0;
    }
-   
-    //Линия всех проектов __________________________________
+
+   //Кнопки (Газпром) __________
+   .btn-in {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 280px;
+      height: 70px;
+      border: 2px solid black;
+      background-color: rgb(189, 203, 215);
+      text-decoration: none;
+      margin: 0;
+   }
+
+   .btn-in p {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 20px;
+      color: black;
+      margin: 0 15px 0 0;
+   }
+
+    //Линия всех проектов __________
     .all_projects-line {
       height: 150px;
       background: url(/img/projects/Rectangle5.png);
@@ -1388,13 +1965,13 @@ body {
    }
    
    
-   //Линия всех проектов __________________________________
-      .all_projects-line {
-         height: 150px;
-         background-size: 200%;
-      }
+   //Линия всех проектов __________
+   .all_projects-line {
+      height: 150px;
+      background-size: 200%;
+   }
 
-      //6 Причини _ _ _
+   //6 Причини _ _ _ _ _
    .reason {
       background-color: rgb(241, 242, 242);
       width: 100%;
@@ -1412,7 +1989,7 @@ body {
 
    .reason_title .six {
       top: -40px;
-      left: -20px;
+      left: 10px;
       width: 170px;
    }
 
@@ -1468,8 +2045,7 @@ body {
       margin: 0;
    }
 
-   //Наши клиенты _ _ _
-
+   //Наши клиенты _ _ _ _ _
    .our_clients {
       align-content: center;
    }
@@ -1517,7 +2093,7 @@ body {
       margin: 0;
    }
 
-   //Слоган __________________________________
+   //Слоган __________
    .slogan {
       align-content: center;
       width: 290px;
@@ -1532,7 +2108,7 @@ body {
       margin: 40px 0 0;
    }
 
-   //Слайдер с видео _ _ _
+   //Слайдер с видео _ _ _ _ _
 
    .slider {
       background: none;
@@ -1546,7 +2122,7 @@ body {
    }
 
    .slider_container .slick-arrow {
-      margin: -60px -50px 0 0;
+      margin: -60px -160px 0 0;
    }
 
    .slick-list {
@@ -1573,8 +2149,7 @@ body {
    }
    
 
-   //Подвал _ _ _
-
+   //Подвал _ _ _ _ _
    .footer-top {
       background-size: 250%;
       background-position: -318px 0;
@@ -1604,7 +2179,7 @@ body {
       line-height: 1;
    }
 
-   //Низ футера __________________________________
+   //Низ подвала __________
    .footer_bottom {
       background-color: rgb(34, 34, 34);
       width: 100%;
@@ -1660,152 +2235,4 @@ body {
    .footer_bottom div:nth-child(4) {
       margin: 0;
    }
-
-}
-// @media (max-width: 767px) {
-//    .header_container {
-//       padding: 40px;
-//    }
-
-//    //_ _ _
-//    .logo {
-//       margin-right: 413px;
-//    }
-//    .logo a {
-//       font-size: 30px;
-//    }
-
-//    //_ _ _
-//    .burger {
-//       display: block;
-//       position: relative;
-//       width: 40px;
-//       height: 30px;
-//       left: -40px;
-//       z-index: 1;
-//    }
-
-//    .burger span {
-//       background-color: white;
-//       position: absolute;
-//       width: 100%;
-//       height: 3px;
-//       left: 0;
-//       top: 14px;
-//       transition: all 0.3s ease 0s;
-//    }
-
-//    .burger::before,
-//    .burger::after {
-//       content: '';
-//       background-color: white;
-//       position: absolute;
-//       width: 100%;
-//       height: 3px;
-//       left: 0;
-//       transition: all 0.3s ease 0s;
-//    }
-
-//    .burger::before {
-//       top: 0;
-//    }
-
-//    .burger::after {
-//       bottom: 0;
-//    }
-
-//    .burger.burger.active span {
-//       transform: scale(0);
-//    }
-
-//    .burger.active:before {
-//       transform: rotate(45deg);
-//       top: 14px;
-//    }
-
-//    .burger.active::after {
-//       transform: rotate(-45deg);
-//       bottom: 14px;
-//    }
-
-//    .bar_container {
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: space-around;
-//       align-items: center;
-//       flex-wrap: wrap;
-//       position: fixed;
-//       top: -100%;
-//       left: 0;
-//       width: 100%;
-//       height: 100%;
-//       background-color: rgb(34, 34, 34);
-//       opacity: 1;
-//       max-height: calc(100vh - 0); // 100% от высоты экрана - высота верхней плашки
-//       overflow-y: hidden;
-//    }
-
-//    .bar_container.active {
-//       top: 0;
-//       transition: all 0.3s ease 0s;
-//    }
-
-//    .bar_container ul {
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: space-around;
-//       align-items: center;
-//       flex-wrap: wrap;
-//       position: relative;
-//    }
-
-//    .bar_container li:not(:last-child) {
-//       padding: 0;
-//       margin-bottom: 40px;
-//    }
-
-//    .bar_container a {
-//       font-size: 35px;
-//    }
-
-//    //_ _ _
-//    .phone {
-//       display: none;
-//    }
-
-//    //_ _ _
-//    .header_title h1 {
-//       font-size: 35px;
-//       line-height: 40px;
-//       margin: 50px 0 0;
-//    }
-
-//    .header_title p {
-//       font-size: 25px;
-//       line-height: 35px;
-//       margin: 20px 0 0;
-//    }
-
-//    //_ _ _
-//    .button_down.active {
-//       display: none;
-//    }
-//    .button_down p {
-//       font-size: 16px;
-//       margin: -11px;
-//    }
-   
-//    .stick {
-//       background: rgb(119, 119, 119);
-//       width: 2px;
-//       height: 35px;
-//       margin: auto;
-//       margin-top: 15px;
-//    }
-// }
-
-@media (max-width: 1024px) {
-}
-
-@media (max-width: 1440px) {
 }
