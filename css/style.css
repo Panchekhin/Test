@@ -1371,6 +1371,10 @@ body {
   .tinkoff-menu p {
     margin: 0 0 30px 0;
   }
+  .adidas-info {
+    position: relative;
+    left: -715px;
+  }
   .btn-in p {
     margin: 0 15px 0 0;
   }
@@ -1382,6 +1386,12 @@ body {
   }
   .btn-in-adi p {
     margin: 0 15px 0 0;
+  }
+  .reason_cards div:nth-child(5) {
+    margin-right: 0;
+  }
+  .reason_cards div:nth-child(6) {
+    margin-right: 85px;
   }
 }
 
