@@ -1164,7 +1164,6 @@ body {
           align-items: center;
   text-align: center;
   background: url(../img/footer-bg.png) no-repeat;
-  background-size: 100%;
   width: 100%;
 }
 
@@ -1387,11 +1386,17 @@ body {
   .btn-in-adi p {
     margin: 0 15px 0 0;
   }
-  .reason_cards div:nth-child(5) {
+  .reason_cards div:nth-child(2) {
+    margin-right: 0;
+  }
+  .reason_cards div:nth-child(4) {
     margin-right: 0;
   }
   .reason_cards div:nth-child(6) {
-    margin-right: 85px;
+    margin-right: 0;
+  }
+  .slider_container .slick-arrow {
+    margin: -60px 40px 0 0;
   }
 }
 
@@ -1774,7 +1779,7 @@ body {
     padding: 0;
   }
   .slider_container .slick-arrow {
-    margin: -60px -160px 0 0;
+    margin: -60px -110px 0 0;
   }
   .slick-list {
     width: 700px;

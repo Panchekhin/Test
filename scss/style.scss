@@ -899,7 +899,6 @@ body {
    align-items: center;
    text-align: center;
    background: url(../img/footer-bg.png) no-repeat;
-   background-size: 100%;
    width: 100%;
 }
 
@@ -1133,15 +1132,23 @@ body {
 
    //6 Причини _ _ _ _ _
    
-   .reason_cards div:nth-child(5) {
+   .reason_cards div:nth-child(2) {
+      margin-right: 0;
+   }
+
+   .reason_cards div:nth-child(4) {
       margin-right: 0;
    }
 
    .reason_cards div:nth-child(6) {
-      margin-right: 85px;
+      margin-right: 0;
    }
 
    //Слайдер с видео _ _ _ _ _
+
+   .slider_container .slick-arrow {
+      margin: -60px 40px 0 0;
+   }
 
    //Подвал _ _ _ _ _
 
@@ -1518,7 +1525,6 @@ body {
    }
 
    //Слайдер с видео _ _ _ _ _ 
-
    .slider {
       padding: 30px 0;
    }
@@ -1528,7 +1534,7 @@ body {
    }
 
    .slider_container .slick-arrow {
-      margin: -60px -160px 0 0;
+      margin: -60px -110px 0 0;
    }
 
    .slick-list {
@@ -1536,7 +1542,6 @@ body {
    }
 
    //Подвал _ _ _ _ _
-
    .footer-top {
       background-size: 250%;
       background-position: -318px 0;
