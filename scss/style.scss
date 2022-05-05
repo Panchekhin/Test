@@ -210,7 +210,7 @@ body {
 //Что мы делаем _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 .main {
    text-align: center;
-   background: url(/img/bg2.png) no-repeat;
+   background: url(img/bg2.png) no-repeat;
    width: 100%;
 }
 
@@ -552,7 +552,7 @@ body {
 //Линия всех проектов __________________________________
 .all_projects-line {
    height: 210px;
-   background: url(/img/projects/Rectangle5.png);
+   background: url(img/projects/Rectangle5.png);
    position: relative;
    z-index: 5;
    width: 100%;
@@ -789,7 +789,7 @@ body {
    display: flex;
    justify-content: space-around;
    align-items: center;
-   background: url(/img/bg-slider2.png) no-repeat;
+   background: url(img/bg-slider2.png) no-repeat;
    background-size: 100%;
    background-position: 110px 0;
    width: 100%;
@@ -820,7 +820,7 @@ body {
 
 .slider_container .slick-arrow.slick-next {
    right: 0;
-   background: url(/icons/slider-arrow.png) 0 0 / 100% no-repeat;
+   background: url(icons/slider-arrow.png) 0 0 / 100% no-repeat;
 }
 
 .slick-list {
@@ -898,7 +898,7 @@ body {
    justify-content: center;
    align-items: center;
    text-align: center;
-   background: url(/img/footer-bg.png) no-repeat;
+   background: url(img/footer-bg.png) no-repeat;
    background-size: 100%;
    width: 100%;
 }
@@ -1692,7 +1692,7 @@ body {
    //Что мы делаем _ _ _ _ _
    .main {
       text-align: center;
-      background: url(/img/bg2.png) no-repeat;
+      background: url(img/bg2.png) no-repeat;
       width: 100%;
    }
 
@@ -1926,7 +1926,7 @@ body {
     //Линия всех проектов __________
     .all_projects-line {
       height: 150px;
-      background: url(/img/projects/Rectangle5.png);
+      background: url(img/projects/Rectangle5.png);
       background-size: 200%;
       position: relative;
       z-index: 5;
